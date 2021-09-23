@@ -1,0 +1,329 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'quicksand',sans-serif;
+    text-decoration: none;
+}
+header {
+    height: 70px;
+    
+}
+header h1 {
+     border:  0px solid black;
+     float: left;
+     padding:  15px 24px;
+}
+header ul{
+    float: right;
+
+}
+header ul li {
+    padding: 24px;
+    display: inline-block;
+}
+header h1 a {
+    color: red;
+    transition: .4s;
+}
+header ul li a{
+    color: black;
+    transition: .4s;
+}
+header h1 a:hover {
+    color: blue;
+    transition: .4s;
+
+}
+header ul li a:hover {
+    color: blue;
+    transition: .4s;
+}
+.container {
+    width: 80%;
+    margin:  0 auto ;
+}
+.container ::after {
+    content: '';
+    display: block;
+}
+.mobile-menu {
+    float: right;
+    display: none;
+    padding: 25px;
+
+}
+.mobile-menu :hover{
+    cursor: pointer;
+}
+#check {
+    display: none;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left:  -300px;
+    width: 300px;
+    background-color:rgba(192, 3, 3, 0.9);
+    transition: .4s;
+    z-index: 9999;
+}
+.sidebar UL LI a {
+    color: #fff;
+    transition:  .3s;
+}
+.sidebar UL LI{
+    padding: 24px;
+    
+}
+.sidebar ul li a:hover{
+    color:black;
+    transition:  .3s;
+}
+#check:checked ~ .sidebar{
+    left: 0px;
+}
+.sidebar ul li:hover {
+    background-color: blue;
+    transition: .2s;
+    transition-property: background;
+}
+.banner {
+    background-color: blue;
+    padding: 150px;
+}
+.banner img {
+    width: 100px;
+    box-shadow: 0px 3px 5px #ddd;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.banner h2,
+.banner p {
+    color : #fff
+}
+.banner h2 {
+    margin-bottom: 10px;
+}
+.banner p {
+    font-size: 20px;
+}
+.banner-left {
+    padding-left: 24px;
+}
+section {
+    padding: 50px 0;
+    color: white;
+}
+section h3{
+    padding-bottom: 20px;
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+
+}
+section h3::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom:  0px;
+    width: 120px;
+    height: 3px;
+    background-color: #ddd;
+    left: calc(50% - 60px);
+}
+section h3::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom:  -2px;
+    width: 40px;
+    height: 4px;
+    background-color:red;
+    left: calc(50% - 20px);
+}
+section p{
+    color: black;
+    padding: 5px;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-indent: 30px;
+}
+#skill,
+#contact {
+    background-color: #f9f9f9;
+}
+#skill .bar {
+    color: black;
+    background-color: #fff;
+    height: 30px;
+    border: 1px solid black;
+    margin-top: 5px 0 20px 0;
+}
+#skill .bar5 {
+    color: black;
+    background-color: #fff;
+    height: 30px;
+    border: 1px solid black;
+    margin-top: 5px 0 20px 0;
+}
+#skill .bar1 {
+    color: black;
+    background-color: #fff;
+    height: 30px;
+    border: 1px solid black;
+    margin-top: 5px 0 20px 0;
+}
+#skill .bar2 {
+    color: black;
+    background-color: #fff;
+    height: 30px;
+    border: 1px solid black;
+    margin-top: 5px 0 20px 0;
+}
+#skill .bar3 {
+    color: black;
+    background-color: #fff;
+    height: 30px;
+    border: 1px solid black;
+    margin-top: 5px 0 20px 0;
+}
+#skill .bar4 {
+    color: black;
+    background-color: #fff;
+    height: 30px;
+    border: 1px solid black;
+    margin-top: 5px 0 20px 0;
+}
+.bar1 .nilai{
+    height: 30px;
+    width: 60%;
+    background-color: red;
+    display: inline-block;
+    text-align: center;
+}
+.bar .nilai{
+    height: 30px;
+    width: 70%;
+    background-color: red;
+    display: inline-block;
+    text-align: center;
+}
+.bar2 .nilai{
+    height: 30px;
+    width: 30%;
+    background-color: red;
+    display: inline-block;
+    text-align: center;
+}
+.bar2 .nilai{
+    height: 30px;
+    width: 30%;
+    background-color: red;
+    display: inline-block;
+    text-align: center;
+}
+.bar3 .nilai{
+    height: 30px;
+    width: 60%;
+    background-color: red;
+    display: inline-block;
+    text-align: center;
+}
+.bar4 .nilai{
+    height: 30px;
+    width: 25%;
+    background-color: red;
+    display: inline-block;
+    text-align: center;
+}
+.bar5 .nilai{
+    height: 30px;
+    width: 70%;
+    background-color: red;
+    display: inline-block;
+    text-align: center;
+}
+.bar .nilai p {
+    margin-top: 1px;
+    text-align: right;
+    color: white;
+}
+.bar1 .nilai p {
+    margin-top: 1px;
+    text-align: right;
+    color: white;
+}
+.bar2 .nilai p {
+    margin-top: 1px;
+    text-align: right;
+    color: white;
+}
+.bar3 .nilai p {
+    margin-top: 1px;
+    text-align: right;
+    color: white;
+}
+.bar4 .nilai p {
+    margin-top: 1px;
+    text-align: right;
+    color: white;
+}
+.container h4 {
+    color: black;
+}
+section h4{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.col-3 {
+    width: 25%;
+    box-sizing:border-box;
+    float: left;
+    color: black;
+    margin-left: -5px;
+    text-align: left;
+}
+#contact{
+    width: auto;
+    height: auto;
+}
+.col-4{
+    width: 50%;
+    box-sizing:border-box;
+    float: left;
+    text-align: right;
+    color: black;
+}
+.col-4 p{
+    text-align: center;
+}
+.col-5 {
+    float: right;
+    width: 25%;
+    text-align: center;
+}
+.col-5 a {
+    text-align: center;
+    float: center;
+}
+@media (max-width : 768px){
+    .mobile-menu{
+        display: block;
+    }
+    header ul {
+        display: none;
+    }
+    .col-3{
+        width: 100%;
+    }
+    .col-4{
+        width: 100%;
+    }
+    .col-5{
+        width: 100%;
+    }
+}
